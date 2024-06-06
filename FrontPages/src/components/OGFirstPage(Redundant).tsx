@@ -34,9 +34,9 @@ export const FirstPage = ({ title }: { title: string }) => {
           {/* <div>{title}</div> */}
           <div className='mb-4 text-3xl text-slate-title'>{title}</div>
           <div className='mb-4'>
-            <label className='block text-semibold pb-2 text-sm'>
+            <label className='block font-semibold pb-2 text-sm'>
               Email{" "}
-              <span className='text-red-mandatory text-semibold text-sm'>
+              <span className='text-red-mandatory font-semibold text-sm'>
                 *
               </span>
             </label>
@@ -49,9 +49,9 @@ export const FirstPage = ({ title }: { title: string }) => {
             />
           </div>
           <div className='mb-4'>
-            <label className='block text-semibold pb-2 text-sm'>
+            <label className='block font-semibold pb-2 text-sm'>
               Password{" "}
-              <span className='text-red-mandatory text-semibold text-sm'>
+              <span className='text-red-mandatory font-semibold text-sm'>
                 *
               </span>
             </label>
@@ -64,9 +64,9 @@ export const FirstPage = ({ title }: { title: string }) => {
             />
           </div>
           <div className='mb-12'>
-            <label className='block text-semibold pb-2 text-sm'>
+            <label className='block font-semibold pb-2 text-sm'>
               Confirm Password{" "}
-              <span className='text-red-mandatory text-semibold text-sm'>
+              <span className='text-red-mandatory font-semibold text-sm'>
                 *
               </span>
             </label>
