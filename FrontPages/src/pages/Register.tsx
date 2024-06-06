@@ -1,10 +1,8 @@
 import { FirstPage } from "../components/FirstPage";
-import { Test } from "../components/Test";
 
 export const Register = () => {
   return (
-    <div className='bg-green-750'>
-      <Test />
+    <div className='bg-green-home text-white w-full h-screen'>
       <FirstPage />
     </div>
   );

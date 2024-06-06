@@ -7,9 +7,13 @@ export default {
         green: {
           home: "#21453C",
           link: "#4FA556",
+          login: "#235E4A",
         },
         gray: {
           paratext: "#9F9F9F",
+        },
+        slate: {
+          title: "#F3F3F3",
         },
       },
     },
