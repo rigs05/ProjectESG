@@ -1,8 +1,8 @@
 import logo from "../assets/logo.png";
 import globe from "../assets/globe.png";
 
-// export const FirstPage = ({ title }: { title: string }) => {
-export const FirstPage = () => {
+export const FirstPage = ({ title }: { title: string }) => {
+  // export const FirstPage = () => {
   return (
     <div className='flex gap-5 justify-evenly items-center h-screen'>
       {/* Introduction div */}
@@ -32,7 +32,7 @@ export const FirstPage = () => {
         {/* Input Form */}
         <form className='bg-green-login rounded-md text-white p-[40px] h-[482px] -m-5'>
           {/* <div>{title}</div> */}
-          <div className='mb-4 text-3xl text-slate-title'>Sign Up</div>
+          <div className='mb-4 text-3xl text-slate-title'>{title}</div>
           <div className='mb-4'>
             <label className='block text-semibold pb-2 text-sm'>
               Email{" "}
