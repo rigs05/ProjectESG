@@ -2,8 +2,8 @@ import onlyLogo from "../assets/logo-only.png";
 
 export const TopBarDash = ({ Name }: { Name: string }) => {
   return (
-    <div className='p-2 bg-gray-light font-sans'>
-      <div className='flex border border-b-gray-300 m-5 py-3 justify-center items-center'>
+    <div className='bg-gray-light font-sans'>
+      <div className='flex mx-5 py-3 justify-center items-center'>
         {/* logo */}
         <div className='flex justify-center items-center'>
           <img src={onlyLogo} alt='Logo Only' className='w-6 h-6' />
@@ -78,6 +78,9 @@ export const TopBarDash = ({ Name }: { Name: string }) => {
           </svg>
         </div>
       </div>
+
+      {/* Horizontal Separator */}
+      <div className='border border-b-gray-edge'></div>
 
       {/* Data Entry Tracker page button FY 2023-24 drop down */}
       <div className='flex justify-between items-center mx-5 p-2'>
