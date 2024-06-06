@@ -6,25 +6,34 @@
 - Tracker page
 - Tailwind
 
-- Structure of Project
+- Structure of Project:
+
   src/
   │
+  ├── assets/
+  │ └── Logo and Images used throughout the project
+  │
   ├── components/
-  │ ├── Header.ts
-  │ ├── Footer.ts
-  │ ├── Navbar.ts
-  │ └── (Other shared components)
+  │ ├── Intro.tsx (Contains company introduction paragraph)
+  │ ├── LoginForm.tsx
+  │ ├── RegForm.tsx
+  │ ├── OGFirstPage(Redundant).tsx (Old code for first page)
+  │ ├── TopBarDash.tsx
+  │ ├── Sidebar.tsx
+  │ ├── DataEntries.tsx
+  │ └── TrackerEntries.tsx
   │
   ├── pages/
-  │ ├── Login.ts
-  │ ├── Register.ts
-  │ ├── Dashboard1.ts
-  │ └── Dashboard2.ts
+  │ ├── Login.tsx
+  │ ├── Register.tsx
+  │ ├── DataEntryDashboard.tsx
+  │ └── TrackerDashboard.tsx
   │
   ├── store/
-  │ ├── authSlice.ts
-  │ ├── dashboardSlice.ts
-  │ └── store.ts
+  │ ├── AuthSlice.tsx
+  │ ├── DashboardSlice.tsx
+  │ └── Store.tsx
   │
-  ├── App.js
-  ├── index.js
+  ├── index.css (contains tailwind css files)
+  ├── App.tsx
+  └── main.tsx
