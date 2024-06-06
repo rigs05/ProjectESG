@@ -8,12 +8,16 @@ export default {
           home: "#21453C",
           link: "#4FA556",
           login: "#235E4A",
+          submit: "#2E9844",
         },
         gray: {
           paratext: "#9F9F9F",
         },
         slate: {
           title: "#F3F3F3",
+        },
+        red: {
+          mandatory: "#CA3C25",
         },
       },
     },
