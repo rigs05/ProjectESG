@@ -1,3 +1,9 @@
+import { TopBarDash } from "../components/TopBarDash";
+
 export const DataEntryDashboard = () => {
-  return <div>DataEntryDashboard</div>;
+  return (
+    <div>
+      <TopBarDash Name={"John Doe"} />
+    </div>
+  );
 };

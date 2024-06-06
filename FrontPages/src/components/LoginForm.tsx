@@ -66,7 +66,9 @@ export const LoginForm = () => {
         </div>
         <p className='text-white text-xs text-center mb-1'>
           Having trouble logging in?{" "}
-          <span className='underline text-green-link'>Contact Us</span>
+          <span className='underline text-green-link'>
+            <a href='#'>Contact Us</a>
+          </span>
         </p>
         <button className='bg-green-submit text-white text-bold px-4 py-4 rounded w-full hover:bg-green-700'>
           Continue
