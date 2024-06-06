@@ -3,7 +3,7 @@ import { dbConnection } from "./db/db";
 const app = express();
 import "dotenv/config";
 import cors from "cors";
-// import routes from "./routes/routes";
+import routes from "./routes/routes";
 
 const PORT = process.env.PORT;
 // Instantiating a server connection function
@@ -13,13 +13,14 @@ const serverConnection = async () => {
 
     app.use(express.json());
     app.use(cors());
-    // app.use(routes);
+    app.use(routes);
 
     // Open and listen to PORT
     const connection = app.listen(PORT, () => {
       console.log(`Server started on port ${PORT}.`);
     });
 
+    // Error handling
     connection.on("error", (err) => {
       return console.error(
         `Error Occurred while connecting to ${PORT}!\n\n ${err}`

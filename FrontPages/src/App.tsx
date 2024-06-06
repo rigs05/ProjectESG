@@ -1,9 +1,9 @@
-import { Button } from "antd";
+import { Register } from "./pages/Register";
 
 function App() {
   return (
     <>
-      <Button type='primary'>Click</Button>
+      <Register />
     </>
   );
 }
