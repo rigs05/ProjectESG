@@ -12,6 +12,9 @@ export default {
         },
         gray: {
           paratext: "#9F9F9F",
+          light: "#F3F3F3",
+          edge: "#C9C9C9",
+          dark: "#333333",
         },
         slate: {
           title: "#F3F3F3",

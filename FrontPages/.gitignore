@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Redundant Components
+/src/components/FirstPage(Redundant).tsx

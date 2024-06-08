@@ -1,3 +1,13 @@
+import { DataEntries } from "../components/DataEntries";
+import { Sidebar } from "../components/Sidebar";
+import { TopBarDash } from "../components/TopBarDash";
+
 export const DataEntryDashboard = () => {
-  return <div>DataEntryDashboard</div>;
+  return (
+    <div>
+      <Sidebar />
+      <TopBarDash Name={"John Doe"} />
+      <DataEntries />
+    </div>
+  );
 };
