@@ -19,6 +19,9 @@ export default {
         slate: {
           title: "#F3F3F3",
         },
+        black: {
+          dark: "#181818",
+        },
         red: {
           mandatory: "#CA3C25",
         },
