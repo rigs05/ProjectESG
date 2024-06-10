@@ -16,23 +16,29 @@ export const DummyData = ({
   result: string;
 }) => {
   return (
-    <div className='grid grid-cols-9 p-2 font-sans bg-white'>
-      <input id='default-checkbox' type='checkbox' className='w-4 h-4' />
-      <text className='text-green-submit'>Assessment {number}</text>
-      <text className='px-2'>{type}</text>
-      <text className=''>{supplies}</text>
-      <text className=''>{score}</text>
-      <text className=''>{classify}</text>
+    // <div className='grid grid-cols-9 p-2 font-sans bg-white'>
+    // <div className='flex justify-around items-center font-sans py-2 bg-white'>
+    <div className='grid grid-cols-9 gap-4 items-center p-2'>
+      <div className='text-center'>
+        <input id='default-checkbox' type='checkbox' className='w-4 h-4' />
+      </div>
+      <div className='text-center text-green-submit'>Assessment {number}</div>
+      <div className='text-center'>{type}</div>
+      <div className='text-center'>{supplies}</div>
+      <div className='text-center'>{score}</div>
+      <div className='text-start'>{classify}</div>
       <StatusWrapper status={status}>
         {status === "PENDING" ? "PENDING" : "COMPLETE"}
       </StatusWrapper>
 
-      <a href='#' className='text-green-submit font-md' defaultValue={"-"}>
-        {result}
-      </a>
+      <div className='text-center'>
+        <a href='#' className='text-green-submit font-md' defaultValue={"-"}>
+          {result}
+        </a>
+      </div>
       <div
         id='actions'
-        className='flex justify-around items-center text-gray-paratext'
+        className='flex justify-center items-center text-gray-paratext'
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -70,7 +76,7 @@ export const DummyData = ({
 // Status-box arrangement logic
 const StatusStylePending = ({ children }: { children: string }) => {
   return (
-    <div className='bg-red-200 text-red-500 py-1 px-2 text-xs rounded-sm font-semibold text-center'>
+    <div className='bg-red-200 text-red-500 py-1 mx-5 text-xs rounded-sm font-semibold text-center'>
       {children}
     </div>
   );
@@ -78,7 +84,7 @@ const StatusStylePending = ({ children }: { children: string }) => {
 
 const StatusStyleFinished = ({ children }: { children: string }) => {
   return (
-    <div className='bg-green-200 text-green-submit py-1 px-2 text-xs rounded- font-semibold text-center'>
+    <div className='bg-green-200 text-green-submit py-1 mx-5 text-xs rounded-sm font-semibold text-center'>
       {children}
     </div>
   );
