@@ -5,9 +5,9 @@ import { TopBarDash } from "../components/TopBarDash";
 export const DataEntryDashboard = () => {
   return (
     <div>
-      <Sidebar />
+      {/* <Sidebar /> */}
       <TopBarDash Name={"John Doe"} />
-      <DataEntries />
+      {/* <DataEntries /> */}
     </div>
   );
 };

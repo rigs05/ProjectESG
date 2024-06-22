@@ -5,8 +5,8 @@ import { TrackerEntries } from "../components/TrackerEntries";
 export const TrackerDashboard = () => {
   return (
     <div>
-      <Sidebar />
-      <TopBarDash Name={"John Doe"} />
+      {/* <Sidebar /> */}
+      {/* <TopBarDash Name={"John Doe"} /> */}
       <TrackerEntries />
     </div>
   );

@@ -1,7 +1,7 @@
 // import { Login } from "./pages/Login";
 // import { Register } from "./pages/Register";
-// import { DataEntryDashboard } from "./pages/DataEntryDashboard";
-// import { TrackerDashboard } from "./pages/TrackerDashboard";
+import { DataEntryDashboard } from "./pages/DataEntryDashboard";
+import { TrackerDashboard } from "./pages/TrackerDashboard";
 
 import { Sidebar } from "./components/Sidebar";
 
@@ -11,8 +11,8 @@ function App() {
       {/* <Register /> */}
       {/* <Login /> */}
       {/* <DataEntryDashboard /> */}
-      {/* <TrackerDashboard /> */}
-      <Sidebar />
+      <TrackerDashboard />
+      {/* <Sidebar /> */}
     </>
   );
 }
