@@ -103,6 +103,6 @@ const StatusWrapper = ({
     case "COMPLETE":
       return <StatusStyleFinished>{children}</StatusStyleFinished>;
     default:
-      <div>{children}</div>;
+      return <div>{children}</div>;
   }
 };

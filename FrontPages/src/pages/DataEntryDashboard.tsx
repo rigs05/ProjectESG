@@ -1,13 +1,17 @@
-import { DataEntries } from "../components/DataEntries";
 import { Sidebar } from "../components/Sidebar";
 import { TopBarDash } from "../components/TopBarDash";
+import { DataEntries } from "../components/DataEntries";
 
-export const DataEntryDashboard = () => {
+const DataEntryDashboard = () => {
   return (
-    <div>
-      {/* <Sidebar /> */}
-      <TopBarDash Name={"John Doe"} />
-      {/* <DataEntries /> */}
+    <div className='flex'>
+      <Sidebar />
+      <div>
+        <TopBarDash Name={"John Doe"} />
+        <DataEntries />
+      </div>
     </div>
   );
 };
+
+export default DataEntryDashboard;

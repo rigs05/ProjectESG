@@ -21,7 +21,9 @@
   │ ├── TopBarDash.tsx
   │ ├── Sidebar.tsx
   │ ├── DataEntries.tsx
-  │ └── TrackerEntries.tsx
+  │ ├── DummyData.tsx (Pre-filled data for Data Entries page)
+  │ ├── TrackerEntries.tsx
+  │ └── DummyDataTracker.tsx (Pre-filled data for the Tracker Entries page)
   │
   ├── pages/
   │ ├── Login.tsx

@@ -1,14 +1,23 @@
 import { DummyDataTracker } from "./DummyDataTracker";
 
-const Cards = ({ title, value, icon }) => {
+// Cards component
+const Cards = ({
+  title,
+  value,
+  icon,
+}: {
+  title: string;
+  value: string;
+  icon: React.ReactNode;
+}) => {
   return (
     <div className='p-5 w-fit rounded-md border'>
       <div className='flex gap-5'>
         <div>
           <div className='text-gray-paratext text-xs'>{title}</div>
-          <div className='font-semibold text-4xl'>{value}</div>
+          <div className='font-semibold text-4xl mt-2'>{value}</div>
         </div>
-        <div className='p-2 m-auto items-center font-bold rounded-md bg-gray-light'>
+        <div className='p-2 m-auto items-center font-bold rounded-lg bg-gray-light'>
           {icon}
         </div>
       </div>
@@ -77,11 +86,13 @@ export const TrackerEntries = () => {
           />
         </svg>
         <input
-          className='outline-none'
+          className='outline-none pr-[120px] text-sm'
           placeholder='Search for a business unit'
         />
       </div>
-      <div className='h-[500px] shadow-sm rounded-md border'>
+      <div className='shadow-sm rounded-md border'>
+        {" "}
+        {/* Removed h-[500px] */}
         {/* Title bar */}
         <div className='grid grid-cols-4 gap-4 p-2 items-center font-sans text-sm bg-gray-light'>
           <div className='flex items-center gap-2 font-bold p-2'>
@@ -153,26 +164,25 @@ export const TrackerEntries = () => {
             </svg>
           </div>
         </div>
-
         {/* Dummy Data */}
         <DummyDataTracker
           month={"Jan 2024"}
-          status={"PENDING"}
-          statusCode={1 / 12}
+          status={"PENDING APPROVAL"}
+          statusValue={"1/12"}
           completion={20}
           unit={"Business Unit 1"}
         />
         <DummyDataTracker
           month={"Feb 2024"}
           status={"APPROVED"}
-          statusCode={2 / 12}
+          statusValue={"2/12"}
           completion={30}
           unit={"Business Unit 2"}
         />
         <DummyDataTracker
           month={"Mar 2024"}
           status={"INCOMPLETE"}
-          statusCode={4 / 12}
+          statusValue={"4/12"}
           completion={50}
           unit={"Business Unit 3"}
         />
